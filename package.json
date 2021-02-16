@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.13.1",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "v-clipboard": "^2.2.3"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
