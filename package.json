@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-static-template",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,vue,scss,css}": [
+      "prettier --write"
+    ],
+    "*.{css,scss,vue}": [
+      "stylelint --fix",
+      "eslint --fix"
+    ],
+    "*.{js,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.13.1",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-vue": "^7.6.0",
+    "fibers": "^5.0.0",
+    "husky": "4",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.7",
+    "sass-loader": "10",
+    "stylelint": "^13.10.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended-scss": "^4.2.0"
+  }
+}
