@@ -3,7 +3,7 @@
   "private": "true",
   "scripts": {
     "dev": "nuxt",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate; echo \"/* /index.html 200\" > dist/_redirects"
   },
   "husky": {
     "hooks": {
