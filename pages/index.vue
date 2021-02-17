@@ -71,7 +71,6 @@
     },
     mounted() {
       this.origin = window.location.origin;
-      console.log(window.location.host);
     },
   };
 </script>
