@@ -1,13 +1,29 @@
 <template>
-  <div>
-    <form @submit="submit">
-      <input type="text" v-model="link" />
-      <button @click="generate">Generate!</button>
-      <NuxtLink :to="generatedPath" v-if="generatedPath !== undefined">
+  <form @submit="submit" class="w-full">
+    <div class="flex">
+      <input
+        type="text"
+        v-model="link"
+        class="bg-gray-100 px-4 py-2 rounded-tl-md rounded-bl-md w-full"
+      />
+      <button
+        @click="generate"
+        class="bg-telegram text-white px-4 py-2 rounded-tr-md rounded-br-md"
+      >
+        Generate
+      </button>
+    </div>
+    <div class="mt-5 text-center" v-if="generatedPath !== undefined">
+      <p class="leading-loose">Your link:</p>
+      <div
+        :to="generatedPath"
+        class="bg-gray-100 flex rounded-md px-4 py-2 select-all cursor-pointer justify-center"
+      >
         {{ generatedUrl }}
-      </NuxtLink>
-    </form>
-  </div>
+      </div>
+      <p class="leading-loose">It's already copied to clipboard:)</p>
+    </div>
+  </form>
 </template>
 
 <script>

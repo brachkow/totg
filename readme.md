@@ -1,6 +1,3 @@
-# Nuxt Template
+# totg
 
-- Nuxt with Nuxt Content set up for static generation
-- ESLint and Prettier
-- SCSS
-
+Fully static Telegram URL shortener built with Nuxt.
