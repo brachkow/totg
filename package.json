@@ -1,5 +1,6 @@
 {
-  "name": "nuxt-static-template",
+  "name": "totg",
+  "private": "true",
   "scripts": {
     "dev": "nuxt",
     "generate": "nuxt generate"
